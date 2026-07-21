@@ -1,0 +1,468 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500" role="img" aria-labelledby="title desc">
+  <title id="title">Atul Verma — Full Stack Engineer and AI Builder</title>
+  <desc id="desc">A premium cyberpunk developer banner with animated terminal, AI network, code panels, and neon atmosphere.</desc>
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="42%" stop-color="#11152B"/>
+      <stop offset="72%" stop-color="#15113A"/>
+      <stop offset="100%" stop-color="#091E2D"/>
+    </linearGradient>
+    <linearGradient id="surfaceGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" stop-opacity=".13"/>
+      <stop offset="50%" stop-color="#F8FAFC" stop-opacity=".04"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity=".08"/>
+    </linearGradient>
+    <linearGradient id="terminalGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#172035" stop-opacity=".96"/>
+      <stop offset="100%" stop-color="#0B1020" stop-opacity=".92"/>
+    </linearGradient>
+    <linearGradient id="neonGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="45%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="purpleGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C4B5FD"/>
+      <stop offset="45%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#5B21B6"/>
+    </linearGradient>
+    <linearGradient id="cyanGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A5F3FC"/>
+      <stop offset="50%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#155E75"/>
+    </linearGradient>
+    <linearGradient id="waveGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#06B6D4" stop-opacity=".75"/>
+      <stop offset="52%" stop-color="#8B5CF6" stop-opacity=".8"/>
+      <stop offset="78%" stop-color="#3B82F6" stop-opacity=".7"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="purpleOrb">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity=".7"/>
+      <stop offset="38%" stop-color="#8B5CF6" stop-opacity=".24"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cyanOrb">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity=".65"/>
+      <stop offset="40%" stop-color="#06B6D4" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blueOrb">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity=".56"/>
+      <stop offset="42%" stop-color="#3B82F6" stop-opacity=".14"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nodeGradient">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="30%" stop-color="#A5F3FC"/>
+      <stop offset="65%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#0E7490"/>
+    </radialGradient>
+    <pattern id="microGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#94A3B8" stroke-opacity=".08" stroke-width="1"/>
+      <circle cx="0" cy="0" r=".8" fill="#06B6D4" fill-opacity=".3"/>
+    </pattern>
+    <pattern id="dotPattern" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r=".8" fill="#F8FAFC" fill-opacity=".15"/>
+    </pattern>
+    <pattern id="scanPattern" width="5" height="5" patternUnits="userSpaceOnUse">
+      <path d="M0 1H5" stroke="#F8FAFC" stroke-opacity=".025"/>
+    </pattern>
+    <filter id="blur24" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <filter id="blur12" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <filter id="blur6" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="neonGlow" x="-100%" y="-150%" width="300%" height="400%">
+      <feGaussianBlur stdDeviation="3" result="blurA"/>
+      <feFlood flood-color="#06B6D4" flood-opacity=".8" result="cyan"/>
+      <feComposite in="cyan" in2="blurA" operator="in" result="cyanGlow"/>
+      <feGaussianBlur stdDeviation="10" result="blurB"/>
+      <feFlood flood-color="#8B5CF6" flood-opacity=".75" result="purple"/>
+      <feComposite in="purple" in2="blurB" operator="in" result="purpleGlow"/>
+      <feMerge>
+        <feMergeNode in="purpleGlow"/>
+        <feMergeNode in="cyanGlow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="titleGlow" x="-30%" y="-90%" width="160%" height="280%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="shadow"/>
+      <feFlood flood-color="#8B5CF6" flood-opacity=".9" result="purple"/>
+      <feComposite in="purple" in2="shadow" operator="in" result="purpleShadow"/>
+      <feGaussianBlur in="SourceAlpha" stdDeviation="11" result="shadow2"/>
+      <feFlood flood-color="#06B6D4" flood-opacity=".45" result="cyan"/>
+      <feComposite in="cyan" in2="shadow2" operator="in" result="cyanShadow"/>
+      <feMerge>
+        <feMergeNode in="cyanShadow"/>
+        <feMergeNode in="purpleShadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="cardShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#020617" flood-opacity=".7"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#06B6D4" flood-opacity=".2"/>
+    </filter>
+    <filter id="noiseFilter" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="22" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="monoNoise"/>
+      <feComponentTransfer in="monoNoise">
+        <feFuncA type="table" tableValues="0 .12"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#020617" flood-opacity=".75"/>
+    </filter>
+    <clipPath id="terminalClip">
+      <rect x="1110" y="86" width="395" height="285" rx="20"/>
+    </clipPath>
+    <clipPath id="leftClip">
+      <rect x="44" y="55" width="430" height="360" rx="30"/>
+    </clipPath>
+    <mask id="fadeMask">
+      <linearGradient id="fadeMaskGradient" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="black"/>
+        <stop offset="18%" stop-color="white"/>
+        <stop offset="82%" stop-color="white"/>
+        <stop offset="100%" stop-color="black"/>
+      </linearGradient>
+      <rect width="1600" height="500" fill="url(#fadeMaskGradient)"/>
+    </mask>
+    <symbol id="spark" viewBox="-10 -10 20 20">
+      <path d="M0-8L2-2L8 0L2 2L0 8L-2 2L-8 0L-2-2Z" fill="#F8FAFC"/>
+    </symbol>
+    <symbol id="hex" viewBox="0 0 60 70">
+      <path d="M30 2L56 17V47L30 62L4 47V17Z" fill="none" stroke="#06B6D4" stroke-width="1.2"/>
+      <path d="M30 10L49 21V43L30 54L11 43V21Z" fill="none" stroke="#8B5CF6" stroke-opacity=".55" stroke-width=".8"/>
+    </symbol>
+    <symbol id="database" viewBox="0 0 46 46">
+      <ellipse cx="23" cy="10" rx="15" ry="6" fill="#0F172A" stroke="#06B6D4" stroke-width="1.5"/>
+      <path d="M8 10V29C8 32.3 14.7 35 23 35C31.3 35 38 32.3 38 29V10" fill="#0F172A" stroke="#06B6D4" stroke-width="1.5"/>
+      <path d="M8 19C8 22.3 14.7 25 23 25C31.3 25 38 22.3 38 19" fill="none" stroke="#8B5CF6" stroke-width="1.3"/>
+      <path d="M8 28C8 31.3 14.7 34 23 34C31.3 34 38 31.3 38 28" fill="none" stroke="#8B5CF6" stroke-width="1.3"/>
+      <circle cx="13" cy="10" r="1.2" fill="#F8FAFC"/>
+    </symbol>
+    <symbol id="server" viewBox="0 0 54 46">
+      <rect x="5" y="5" width="44" height="15" rx="4" fill="#0F172A" stroke="#3B82F6" stroke-width="1.5"/>
+      <rect x="5" y="25" width="44" height="15" rx="4" fill="#0F172A" stroke="#06B6D4" stroke-width="1.5"/>
+      <circle cx="12" cy="12.5" r="2" fill="#22C55E"/>
+      <circle cx="12" cy="32.5" r="2" fill="#22C55E"/>
+      <path d="M19 12.5H40M19 32.5H40" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="cloud" viewBox="0 0 72 48">
+      <path d="M20 38H55C64 38 68 33 68 26C68 19 62 14 55 14C52 7 46 4 39 4C30 4 23 9 20 17C11 17 5 22 5 29C5 34 10 38 20 38Z" fill="#0F172A" fill-opacity=".85" stroke="#06B6D4" stroke-width="1.5"/>
+      <path d="M20 31H56" stroke="#8B5CF6" stroke-width="1.4" stroke-linecap="round"/>
+      <circle cx="29" cy="24" r="2" fill="#22C55E"/>
+      <circle cx="39" cy="24" r="2" fill="#22C55E"/>
+      <circle cx="49" cy="24" r="2" fill="#22C55E"/>
+    </symbol>
+  </defs>
+  <rect width="1600" height="500" fill="url(#bgGradient)"/>
+  <rect width="1600" height="500" fill="url(#microGrid)"/>
+  <rect width="1600" height="500" fill="url(#scanPattern)"/>
+  <ellipse cx="205" cy="110" rx="320" ry="270" fill="url(#purpleOrb)" filter="url(#blur24)">
+    <animate attributeName="cx" values="205;280;205" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="110;145;110" dur="12s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="1320" cy="105" rx="310" ry="250" fill="url(#cyanOrb)" filter="url(#blur24)">
+    <animate attributeName="cx" values="1320;1260;1320" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="105;145;105" dur="10s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="810" cy="520" rx="500" ry="170" fill="url(#blueOrb)" filter="url(#blur24)">
+    <animate attributeName="rx" values="500;580;500" dur="9s" repeatCount="indefinite"/>
+  </ellipse>
+  <g opacity=".5" mask="url(#fadeMask)">
+    <path d="M-120 390L405 -5M-20 505L620 -5M150 505L790 -5M420 505L1040 -5M715 505L1300 -5M1000 505L1590 -5M1250 505L1710 120" stroke="#8B5CF6" stroke-opacity=".18" stroke-width="1"/>
+    <path d="M-105 410L430 5M-2 510L638 0M168 510L805 0M440 510L1060 0M730 510L1315 0M1012 510L1600 12" stroke="#06B6D4" stroke-opacity=".1" stroke-width=".7"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;80 0;0 0" dur="14s" repeatCount="indefinite"/>
+      <path d="M-400 170L180 500M-280 30L560 500M10 0L870 500M370 0L1230 500M750 0L1600 485M1120 0L1700 330" stroke="#3B82F6" stroke-opacity=".08" stroke-width="1"/>
+    </g>
+  </g>
+  <g opacity=".3">
+    <path d="M0 392H1600" stroke="#06B6D4" stroke-opacity=".28"/>
+    <path d="M0 414H1600" stroke="#8B5CF6" stroke-opacity=".12"/>
+    <path d="M0 440H1600" stroke="#3B82F6" stroke-opacity=".08"/>
+    <path d="M800 270L0 500M800 270L200 500M800 270L400 500M800 270L600 500M800 270L800 500M800 270L1000 500M800 270L1200 500M800 270L1400 500M800 270L1600 500" fill="none" stroke="#06B6D4" stroke-opacity=".15"/>
+  </g>
+  <g opacity=".5">
+    <circle cx="84" cy="75" r="1.5" fill="#F8FAFC">
+      <animate attributeName="opacity" values=".15;1;.15" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="274" cy="28" r="1.2" fill="#06B6D4">
+      <animate attributeName="opacity" values=".2;1;.2" dur="3.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="505" cy="68" r="1.7" fill="#8B5CF6">
+      <animate attributeName="opacity" values=".1;.9;.1" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="721" cy="31" r="1.1" fill="#F8FAFC">
+      <animate attributeName="opacity" values=".2;1;.2" dur="3.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="963" cy="55" r="1.4" fill="#06B6D4">
+      <animate attributeName="opacity" values=".15;.9;.15" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1064" cy="24" r="1.3" fill="#8B5CF6">
+      <animate attributeName="opacity" values=".2;1;.2" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1390" cy="45" r="1.8" fill="#F8FAFC">
+      <animate attributeName="opacity" values=".2;.95;.2" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1530" cy="183" r="1.2" fill="#06B6D4">
+      <animate attributeName="opacity" values=".15;1;.15" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="72" cy="316" r="1.2" fill="#8B5CF6">
+      <animate attributeName="opacity" values=".2;1;.2" dur="2.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1007" cy="425" r="1.5" fill="#F8FAFC">
+      <animate attributeName="opacity" values=".15;.9;.15" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <g opacity=".55">
+    <use href="#hex" x="42" y="112" width="46" height="54">
+      <animateTransform attributeName="transform" type="rotate" values="0 65 145;360 65 145" dur="32s" repeatCount="indefinite"/>
+    </use>
+    <use href="#hex" x="1480" y="253" width="53" height="62">
+      <animateTransform attributeName="transform" type="rotate" values="360 1506 284;0 1506 284" dur="30s" repeatCount="indefinite"/>
+    </use>
+    <use href="#hex" x="1028" y="25" width="33" height="39" opacity=".65">
+      <animateTransform attributeName="transform" type="rotate" values="0 1044 44;360 1044 44" dur="23s" repeatCount="indefinite"/>
+    </use>
+    <use href="#hex" x="525" y="384" width="32" height="38" opacity=".5">
+      <animateTransform attributeName="transform" type="rotate" values="360 541 403;0 541 403" dur="26s" repeatCount="indefinite"/>
+    </use>
+  </g>
+  <g clip-path="url(#leftClip)">
+    <rect x="44" y="55" width="430" height="360" rx="30" fill="url(#surfaceGradient)" stroke="#F8FAFC" stroke-opacity=".1"/>
+    <rect x="44" y="55" width="430" height="360" rx="30" fill="url(#dotPattern)" opacity=".25"/>
+    <path d="M52 105C170 60 318 80 470 130" fill="none" stroke="#06B6D4" stroke-opacity=".22"/>
+    <path d="M44 348C172 300 312 360 474 312" fill="none" stroke="#8B5CF6" stroke-opacity=".2"/>
+    <g filter="url(#softShadow)">
+      <rect x="78" y="115" width="155" height="93" rx="13" fill="#111827" fill-opacity=".8" stroke="#06B6D4" stroke-opacity=".48"/>
+      <rect x="78" y="115" width="155" height="21" rx="13" fill="#06B6D4" fill-opacity=".09"/>
+      <circle cx="93" cy="125.5" r="3" fill="#F87171"/>
+      <circle cx="103" cy="125.5" r="3" fill="#FBBF24"/>
+      <circle cx="113" cy="125.5" r="3" fill="#22C55E"/>
+      <path d="M92 151H126M92 162H174M92 173H148M92 184H191" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+      <path d="M132 151H178M181 151H211M154 173H208" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="5s" repeatCount="indefinite"/>
+    </g>
+    <g filter="url(#softShadow)">
+      <rect x="280" y="84" width="142" height="85" rx="15" fill="#111827" fill-opacity=".78" stroke="#8B5CF6" stroke-opacity=".5"/>
+      <rect x="296" y="102" width="56" height="8" rx="4" fill="#F8FAFC" fill-opacity=".55"/>
+      <rect x="296" y="119" width="93" height="5" rx="2.5" fill="#94A3B8" fill-opacity=".45"/>
+      <rect x="296" y="133" width="72" height="5" rx="2.5" fill="#06B6D4" fill-opacity=".6"/>
+      <circle cx="393" cy="122" r="13" fill="none" stroke="#8B5CF6" stroke-width="2"/>
+      <path d="M393 109V135M380 122H406" stroke="#06B6D4" stroke-width="1.4"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 9;0 0" dur="5.8s" repeatCount="indefinite"/>
+    </g>
+    <g filter="url(#softShadow)">
+      <rect x="285" y="279" width="145" height="93" rx="15" fill="#111827" fill-opacity=".78" stroke="#3B82F6" stroke-opacity=".52"/>
+      <path d="M303 298H346" stroke="#F8FAFC" stroke-opacity=".65" stroke-width="5" stroke-linecap="round"/>
+      <path d="M303 315H403M303 330H380M303 345H350" stroke="#94A3B8" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/>
+      <rect x="385" y="340" width="25" height="11" rx="5.5" fill="#22C55E" fill-opacity=".75"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -8;0 0" dur="4.7s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(160 225)" filter="url(#neonGlow)">
+      <circle cx="78" cy="72" r="54" fill="#10192B" stroke="#8B5CF6" stroke-opacity=".6" stroke-width="1.5"/>
+      <circle cx="78" cy="72" r="42" fill="none" stroke="#06B6D4" stroke-opacity=".28" stroke-width="1"/>
+      <path d="M47 90C54 77 64 70 78 70C92 70 103 77 110 90" fill="none" stroke="#A5F3FC" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="78" cy="57" r="14" fill="#18243B" stroke="#06B6D4" stroke-width="2"/>
+      <path d="M53 98C48 111 45 126 45 140H111C111 126 108 111 103 98" fill="#17233A" stroke="#8B5CF6" stroke-width="2"/>
+      <path d="M60 109H96" stroke="#06B6D4" stroke-opacity=".7" stroke-width="2"/>
+      <path d="M69 123H87" stroke="#8B5CF6" stroke-width="2"/>
+      <circle cx="72" cy="57" r="2" fill="#06B6D4"/>
+      <circle cx="84" cy="57" r="2" fill="#06B6D4"/>
+      <path d="M74 64H82" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round"/>
+      <animateTransform attributeName="transform" type="translate" values="160 225;160 218;160 225" dur="4.2s" repeatCount="indefinite"/>
+    </g>
+    <g stroke="#06B6D4" stroke-opacity=".46" fill="none">
+      <path d="M233 162C270 176 282 190 296 222"/>
+      <path d="M238 294C270 290 289 303 305 316"/>
+      <path d="M165 282C130 253 129 215 145 193"/>
+      <path d="M261 247C301 235 327 216 346 190"/>
+      <path d="M153 319C128 346 103 354 78 344"/>
+      <path d="M268 337C282 354 292 372 307 388"/>
+      <circle cx="296" cy="222" r="4" fill="#06B6D4"/>
+      <circle cx="305" cy="316" r="4" fill="#8B5CF6"/>
+      <circle cx="145" cy="193" r="4" fill="#06B6D4"/>
+      <circle cx="346" cy="190" r="4" fill="#8B5CF6"/>
+      <circle cx="78" cy="344" r="4" fill="#22C55E"/>
+      <circle cx="307" cy="388" r="4" fill="#06B6D4"/>
+    </g>
+    <g>
+      <use href="#database" x="55" y="310" width="48" height="48">
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 -5;0 0" dur="3.7s" repeatCount="indefinite"/>
+      </use>
+      <use href="#server" x="365" y="190" width="52" height="45">
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 5;0 0" dur="4.4s" repeatCount="indefinite"/>
+      </use>
+      <use href="#cloud" x="346" y="365" width="65" height="43">
+        <animateTransform attributeName="transform" type="translate" values="0 0;7 0;0 0" dur="5.4s" repeatCount="indefinite"/>
+      </use>
+    </g>
+    <g font-family="monospace" font-size="9" fill="#94A3B8" opacity=".75">
+      <text x="61" y="293">DATABASE</text>
+      <text x="355" y="181">EDGE SERVER</text>
+      <text x="345" y="357">CLOUD API</text>
+      <text x="82" y="392" fill="#06B6D4">01001001</text>
+      <text x="173" y="402" fill="#8B5CF6">AI / ML</text>
+    </g>
+    <g fill="#F8FAFC">
+      <use href="#spark" x="111" y="223" width="12" height="12" opacity=".8">
+        <animateTransform attributeName="transform" type="rotate" values="0 117 229;360 117 229" dur="4s" repeatCount="indefinite"/>
+      </use>
+      <use href="#spark" x="425" y="239" width="9" height="9" opacity=".7">
+        <animateTransform attributeName="transform" type="rotate" values="360 429 243;0 429 243" dur="3.2s" repeatCount="indefinite"/>
+      </use>
+    </g>
+  </g>
+  <g transform="translate(800 0)">
+    <g opacity=".95">
+      <rect x="-248" y="155" width="18" height="2" rx="1" fill="#06B6D4"/>
+      <rect x="230" y="155" width="18" height="2" rx="1" fill="#8B5CF6"/>
+      <circle cx="-215" cy="156" r="2" fill="#06B6D4" filter="url(#neonGlow)"/>
+      <circle cx="215" cy="156" r="2" fill="#8B5CF6" filter="url(#neonGlow)"/>
+    </g>
+    <text x="0" y="236" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" letter-spacing="4" fill="#F8FAFC" filter="url(#titleGlow)">ATUL VERMA</text>
+    <text x="0" y="236" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" letter-spacing="4" fill="none" stroke="url(#neonGradient)" stroke-width=".75" stroke-opacity=".7">ATUL VERMA</text>
+    <rect x="-170" y="251" width="340" height="1.2" rx=".6" fill="url(#neonGradient)" filter="url(#neonGlow)">
+      <animate attributeName="width" values="150;340;150" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="-75;-170;-75" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="0" y="285" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="500" letter-spacing="2.4" fill="#94A3B8">FULL STACK ENGINEER  •  AI BUILDER
+      <animate attributeName="opacity" values=".35;1;.35" dur="4s" repeatCount="indefinite"/>
+    </text>
+    <g transform="translate(-104 310)">
+      <rect width="208" height="34" rx="17" fill="#0F172A" fill-opacity=".68" stroke="#F8FAFC" stroke-opacity=".13"/>
+      <circle cx="22" cy="17" r="5" fill="#22C55E" filter="url(#neonGlow)">
+        <animate attributeName="opacity" values=".4;1;.4" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <text x="38" y="22" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="600" letter-spacing=".9" fill="#F8FAFC">BUILDING THE FUTURE</text>
+    </g>
+    <g opacity=".7">
+      <circle cx="-265" cy="248" r="2" fill="#06B6D4">
+        <animateMotion dur="5s" repeatCount="indefinite" path="M0 0C45 -35 75 25 125 0"/>
+      </circle>
+      <circle cx="140" cy="248" r="2" fill="#8B5CF6">
+        <animateMotion dur="5s" repeatCount="indefinite" path="M0 0C45 35 75 -25 125 0"/>
+      </circle>
+    </g>
+  </g>
+  <g filter="url(#cardShadow)">
+    <rect x="1110" y="86" width="395" height="285" rx="20" fill="url(#terminalGradient)" stroke="#F8FAFC" stroke-opacity=".16"/>
+    <rect x="1110" y="86" width="395" height="285" rx="20" fill="url(#surfaceGradient)" opacity=".55"/>
+    <path d="M1110 124H1505" stroke="#F8FAFC" stroke-opacity=".11"/>
+    <circle cx="1136" cy="105" r="5" fill="#F87171"/>
+    <circle cx="1153" cy="105" r="5" fill="#FBBF24"/>
+    <circle cx="1170" cy="105" r="5" fill="#22C55E"/>
+    <rect x="1248" y="97" width="112" height="16" rx="8" fill="#F8FAFC" fill-opacity=".06"/>
+    <text x="1304" y="109" text-anchor="middle" font-family="monospace" font-size="9" fill="#94A3B8">atul@portfolio</text>
+    <g clip-path="url(#terminalClip)" font-family="Consolas, monospace" font-size="13">
+      <rect x="1125" y="140" width="4" height="207" rx="2" fill="url(#neonGradient)" opacity=".8"/>
+      <text x="1145" y="153" fill="#06B6D4">&gt; <tspan fill="#F8FAFC">npm run dev</tspan></text>
+      <text x="1145" y="179" fill="#8B5CF6">➜ <tspan fill="#94A3B8">Building AI Agents...</tspan></text>
+      <text x="1145" y="205" fill="#22C55E">✓ <tspan fill="#F8FAFC">Next.js</tspan></text>
+      <text x="1145" y="231" fill="#22C55E">✓ <tspan fill="#F8FAFC">MERN Stack</tspan></text>
+      <text x="1145" y="257" fill="#22C55E">✓ <tspan fill="#F8FAFC">LangGraph</tspan></text>
+      <text x="1145" y="283" fill="#22C55E">✓ <tspan fill="#F8FAFC">OpenAI</tspan></text>
+      <text x="1145" y="309" fill="#22C55E">✓ <tspan fill="#F8FAFC">Prisma</tspan></text>
+      <text x="1145" y="335" fill="#22C55E">✓ <tspan fill="#F8FAFC">MongoDB</tspan></text>
+      <text x="1145" y="354" fill="#06B6D4">&gt;</text>
+      <rect x="1161" y="342" width="8" height="15" fill="#F8FAFC">
+        <animate attributeName="opacity" values="1;1;0;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+      <g opacity=".13">
+        <path d="M1137 164H1480M1137 190H1480M1137 216H1480M1137 242H1480M1137 268H1480M1137 294H1480M1137 320H1480" stroke="#06B6D4"/>
+      </g>
+      <g opacity=".55">
+        <circle cx="1457" cy="152" r="2" fill="#06B6D4">
+          <animate attributeName="opacity" values=".2;1;.2" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="1470" cy="152" r="2" fill="#8B5CF6">
+          <animate attributeName="opacity" values="1;.2;1" dur="2s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+    </g>
+    <rect x="1126" y="386" width="363" height="1" fill="url(#neonGradient)" opacity=".5"/>
+    <text x="1128" y="403" font-family="monospace" font-size="9" fill="#94A3B8">SYSTEM STATUS</text>
+    <text x="1484" y="403" text-anchor="end" font-family="monospace" font-size="9" fill="#22C55E">ONLINE</text>
+  </g>
+  <g opacity=".7">
+    <path d="M998 92C1042 110 1064 130 1095 167" fill="none" stroke="#06B6D4" stroke-opacity=".32" stroke-width="1"/>
+    <path d="M1002 365C1041 344 1070 335 1102 330" fill="none" stroke="#8B5CF6" stroke-opacity=".35" stroke-width="1"/>
+    <circle cx="998" cy="92" r="4" fill="#06B6D4" filter="url(#neonGlow)">
+      <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1002" cy="365" r="4" fill="#8B5CF6" filter="url(#neonGlow)">
+      <animate attributeName="r" values="5;3;5" dur="2.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1070" cy="139" r="2.5" fill="#F8FAFC">
+      <animateMotion dur="3.6s" repeatCount="indefinite" path="M-72 -47C-28 -29 -6 -9 25 28"/>
+    </circle>
+    <circle cx="1067" cy="340" r="2.5" fill="#F8FAFC">
+      <animateMotion dur="4.1s" repeatCount="indefinite" path="M-65 25C-26 4 3 -5 35 -10"/>
+    </circle>
+  </g>
+  <g opacity=".58" font-family="monospace" font-size="10">
+    <text x="560" y="105" fill="#06B6D4">0100</text>
+    <text x="625" y="130" fill="#8B5CF6">1011</text>
+    <text x="985" y="118" fill="#3B82F6">AI_01</text>
+    <text x="1520" y="94" fill="#06B6D4">∞</text>
+    <text x="1518" y="405" fill="#8B5CF6">0110</text>
+    <text x="494" y="326" fill="#06B6D4">API</text>
+    <text x="102" y="448" fill="#8B5CF6">NODE</text>
+    <text x="1370" y="452" fill="#06B6D4">MODEL</text>
+  </g>
+  <g opacity=".45">
+    <rect x="530" y="72" width="58" height="20" rx="5" fill="#F8FAFC" fill-opacity=".04" stroke="#06B6D4" stroke-opacity=".34">
+      <animateTransform attributeName="transform" type="translate" values="0 0;12 6;0 0" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="948" y="391" width="72" height="22" rx="5" fill="#F8FAFC" fill-opacity=".04" stroke="#8B5CF6" stroke-opacity=".38">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-13 -5;0 0" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1520" y="124" width="38" height="16" rx="4" fill="#F8FAFC" fill-opacity=".04" stroke="#3B82F6" stroke-opacity=".4">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-6 9;0 0" dur="4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <g opacity=".7">
+    <circle cx="535" cy="198" r="4" fill="url(#nodeGradient)" filter="url(#neonGlow)">
+      <animate attributeName="r" values="3;5;3" dur="2.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="566" cy="215" r="2.5" fill="#8B5CF6"/>
+    <circle cx="542" cy="240" r="3" fill="#06B6D4"/>
+    <path d="M535 198L566 215L542 240Z" fill="none" stroke="#06B6D4" stroke-opacity=".4"/>
+    <circle cx="1053" cy="222" r="4" fill="url(#nodeGradient)" filter="url(#neonGlow)">
+      <animate attributeName="r" values="5;3;5" dur="2.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1080" cy="203" r="2.5" fill="#8B5CF6"/>
+    <circle cx="1087" cy="239" r="3" fill="#06B6D4"/>
+    <path d="M1053 222L1080 203L1087 239Z" fill="none" stroke="#8B5CF6" stroke-opacity=".4"/>
+  </g>
+  <g opacity=".45">
+    <use href="#spark" x="564" y="354" width="10" height="10" fill="#06B6D4">
+      <animateTransform attributeName="transform" type="rotate" values="0 569 359;360 569 359" dur="5s" repeatCount="indefinite"/>
+    </use>
+    <use href="#spark" x="1025" y="61" width="12" height="12" fill="#8B5CF6">
+      <animateTransform attributeName="transform" type="rotate" values="360 1031 67;0 1031 67" dur="4.2s" repeatCount="indefinite"/>
+    </use>
+    <use href="#spark" x="1435" y="338" width="9" height="9" fill="#06B6D4">
+      <animateTransform attributeName="transform" type="rotate" values="0 1439 342;360 1439 342" dur="3.8s" repeatCount="indefinite"/>
+    </use>
+  </g>
+  <g opacity=".38">
+    <path d="M22 465C170 433 270 484 404 458C560 428 654 452 797 470C956 490 1042 441 1177 454C1334 468 1441 437 1582 459" fill="none" stroke="url(#waveGradient)" stroke-width="2" filter="url(#neonGlow)">
+      <animate attributeName="d" values="M22 465C170 433 270 484 404 458C560 428 654 452 797 470C956 490 1042 441 1177 454C1334 468 1441 437 1582 459;M22 454C170 477 270 436 404 469C560 495 654 444 797 456C956 468 1042 487 1177 461C1334 435 1441 472 1582 449;M22 465C170 433 270 484 404 458C560 428 654 452 797 470C956 490 1042 441 1177 454C1334 468 1441 437 1582 459" dur="8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0 478C205 441 350 494 550 471C755 447 875 493 1082 467C1290 441 1432 486 1600 462" fill="none" stroke="url(#waveGradient)" stroke-opacity=".7" stroke-width="1">
+      <animate attributeName="d" values="M0 478C205 441 350 494 550 471C755 447 875 493 1082 467C1290 441 1432 486 1600 462;M0 465C205 493 350 450 550 480C755 497 875 452 1082 478C1290 497 1432 450 1600 477;M0 478C205 441 350 494 550 471C755 447 875 493 1082 467C1290 441 1432 486 1600 462" dur="6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <rect width="1600" height="500" fill="#F8FAFC" filter="url(#noiseFilter)" opacity=".35"/>
+  <rect x=".5" y=".5" width="1599" height="499" fill="none" stroke="#F8FAFC" stroke-opacity=".08"/>
+</svg>
